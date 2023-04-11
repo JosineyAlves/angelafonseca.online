@@ -1,15 +1,6 @@
 .section {
     margin-bottom: 60px;
-    background-image: radial-gradient(circle closest-corner at 50% 50%, #f3e4dc, #E9D2C5)
-}
-
-.heading {
-    display: flex;
-    color: #E58C6C;
-    font-size: 35px;
-    line-height: 1.2em;
-    text-align: center;
-    font-weight: 900;
+    background-image: radial-gradient(circle closest-corner at 50% 50%, #ffffff, #E9D3C6)
 }
 
 .subhealing {
@@ -18,10 +9,6 @@
     line-height: 1.2em;
     font-weight: 400;
     text-align: center
-}
-
-.highlight {
-    color: #075c47
 }
 
 .cap-html-embed {
@@ -229,6 +216,8 @@
     text-align: center;
     font-weight: 200;
     text-align: none;
+    line-height: 1.2em
+
 }
 
 .subhealing-2 {
