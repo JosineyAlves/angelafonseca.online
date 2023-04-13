@@ -1,10 +1,10 @@
 .section {
     margin-bottom: 60px;
-    background-image: radial-gradient(circle closest-corner at 50% 50%, #f3e4dc, #E9D2C5)
+    background-color: #08002D;
 }
 
 .subhealing {
-    color: #E58C6C;
+    color: #ffffff;
     font-size: 22px;
     line-height: 1.2em;
     font-weight: 400;
@@ -83,10 +83,10 @@
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Urbanist', sans-serif;
-    color: #72726F;
+    color: #ffffff;
     font-size: 18px;
     line-height: 1.2em;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     letter-spacing: 0
 }
@@ -184,7 +184,7 @@
 
 .footer.blue {
     margin-top: 60px;
-    background-color: #E58C6C;
+    background-color: #07174A;
 }
 
 .container-4 {
@@ -221,7 +221,7 @@
 }
 
 .subhealing-2 {
-    color: #72726F;
+    color: #ffffff;
     font-size: 20px;
     line-height: 1.2em;
     font-weight: 400;
