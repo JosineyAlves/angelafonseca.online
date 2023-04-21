@@ -7,7 +7,7 @@
     <title>Mapa da Queima de Gordura</title>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;600;700;800&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;family=Roboto:wght@400;500;600;700;800;900&amp;family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
     <link rel="preload" href="https://scripts.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/643ea4a11de2a300099cac74/player.js" as="script">
     <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
     <link rel="preload" href="https://images.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/643ea4a11de2a300099cac74/thumbnail.jpg" as="image">
@@ -74,7 +74,7 @@
         }
         
         .gap-12 {
-            48px
+            gap: 48px
         }
         
         .gap-24 {
@@ -318,49 +318,38 @@
             }
         }
     </style>
-        <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '486648183552300');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=486648183552300&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
     <style>
         .zooming {
-            animation: zooming 1.25s ease infinite;
+            animation: zooming 1.55s ease infinite;
         }
         
         @keyframes zooming {
             0% {
-                transform: scale(1, 1);
+                transform: scale(0.9, 0.9);
             }
             50% {
-                transform: scale(1.1, 1.1);
+                transform: scale(1, 1);
             }
             100% {
-                transform: scale(1, 1);
+                transform: scale(0.9, 0.9);
             }
         }
     </style>
     <div class="division-1657813287709__wrapper">
         <style>
             #division-1657813287709 {
-                position: relative;
-                padding: 2vh 20vw 2vh 20vw;
-                background-color: #ff0000;
+                max-width: 100%;
+                z-index: 100000;
+                position: fixed;
+                padding: 3vh 0vw 3vh 0vw;
+                background-color: rgba(0, 0, 0, .76);
+                top: 0%;
+                bottom: auto;
+                left: 0%;
+                right: 0%
             }
             
             @media (max-width:1200px) {
@@ -378,14 +367,30 @@
         <div id="division-1657813287709" class="BdzCSu8171582">
             <div class="text-16578133316969nqkcl">
                 <style>
-                    .text-16578133316969nqkcl-element p {
-                        font-size: 1.22vw;
-                        text-align: center;
-                        padding-top: 1vh;
-                        padding-bottom: 1vh;
-                        color: #ffffff;
-                        line-height: 1.1;
-                        font-weight: 400;
+                    .text-block {
+                        color: #ef0505;
+                        margin-right: 20px;
+                        font-size: 1.25rem;
+                        font-weight: 900;
+                    }
+                    
+                    .bold-text-13 {
+                        font-weight: 900;
+                        line-height: 1.5;
+                    }
+                    
+                    .date_limite {
+                        color: #fff;
+                        margin-bottom: 0;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: 1.5
+                    }
+                    
+                    .alert_limit {
+                        justify-content: center;
+                        align-items: center;
+                        display: none
                     }
                     
                     @media (max-width: 1200px) {
@@ -401,21 +406,25 @@
                             font-size: 4.00vw;
                             text-align: center;
                         }
+                        .alert_limit {
+                            text-align: center;
+                            flex-direction: column;
+                            align-items: center;
+                            font-size: .875rem;
+                            padding: 0.8vh 8vw 0.8vh 8vw;
+                        }
+                        .date_limite {
+                            font-weight: 500;
+                            line-height: 1.2;
+                            margin-top: 0.1vh;
+                        }
                     }
                 </style>
-                <div class="text-16578133316969nqkcl-element text">
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    <script>
-                        $.get("https://ipinfo.io/json", function(response) {
-                            $("#ip").html("IP: " + response.ip);
-                            $("#address").html(response.city);
-                            $("#details").html(JSON.stringify(response, null, 4));
-                        }, "jsonp");
-                    </script>
-                    <p>
-                        Você e algumas pessoas próximas a&nbsp;<span style="color:#000000"><b><span id="address"></span></b>
-                        </span>foram selecionadas para assistir
-                    </p>
+                <div class="text-16578133316969nqkcl">
+                    <div class="alert_limit">
+                        <div class="text-block"><strong class="bold-text-13">ATENÇÃO!</strong></div>
+                        <p class="date_limite"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,8 +433,8 @@
         <style>
             #division-1657813536866 {
                 position: relative;
-                padding: 8vh 20vw 1vh 20vw;
-                background-color: #ffffff;
+                padding: 15vh 20vw 1vh 20vw;
+                background-color: #121a21;
             }
             
             @media (max-width:1200px) {
@@ -436,14 +445,20 @@
             
             @media (max-width:600px) {
                 #division-1657813536866 {
-                    padding: 5.5vh 1.5vw 0.001vh 1.5vw;
+                    padding: 20vh 3vw 0.001vh 3vw;
                 }
             }
         </style>
         <div id="division-1657813536866" class="uucpHm8171582">
- 
+
             <!-- VSL -->
-            <div id="vid_643ea4a11de2a300099cac74" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_643ea4a11de2a300099cac74" src="https://images.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/643ea4a11de2a300099cac74/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_643ea4a11de2a300099cac74" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_643ea4a11de2a300099cac74">var s=document.createElement("script");s.src="https://scripts.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/643ea4a11de2a300099cac74/player.js",s.async=!0,document.head.appendChild(s);</script>
+            <div id="vid_643ea4a11de2a300099cac74" style="position:relative;width:100%;padding: 56.25% 0 0;box-shadow: 0 0 14px 4px rgba(255, 255, 255, .27);"><img id="thumb_643ea4a11de2a300099cac74" src="https://images.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/643ea4a11de2a300099cac74/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+                <div id="backdrop_643ea4a11de2a300099cac74" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>
+            </div>
+            <script type="text/javascript" id="scr_643ea4a11de2a300099cac74">
+                var s = document.createElement("script");
+                s.src = "https://scripts.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/643ea4a11de2a300099cac74/player.js", s.async = !0, document.head.appendChild(s);
+            </script>
             <!-- VSL -->
 
             <div class="description-16578141835486qxbNr">
@@ -453,7 +468,7 @@
                         text-align: center;
                         padding-top: 3vh;
                         padding-bottom: 4vh;
-                        color: #222222;
+                        color: #ffffff;
                         line-height: 1.1;
                         font-weight: 400;
                     }
@@ -486,7 +501,7 @@
             #division-aAYpWa1942952 {
                 position: relative;
                 padding: 3vh 20vw 3vh 20vw;
-                background-color: #ffffff;
+                background-color: #121a21;
             }
             
             @media (max-width:1200px) {
@@ -505,19 +520,27 @@
             <div class="button-pWyRmY6545268 esconder">
                 <style>
                     a.button-pWyRmY6545268-element {
-                        background-color: #00dd00;
-                        border-radius: 16px;
-                        border: none;
-                        color: #ffffff;
-                        padding: 16px 32px 16px 32px;
-                        font-weight: 600;
+                        background-color: #5eb44b;
+                        background-image: linear-gradient(127deg, #5eb44b 45%, #adff5d);
+                        border: 4px solid #acff5c;
+                        border-radius: 71px;
+                        color: #101418;
+                        padding: 28px 35px;
+                        font-weight: 700;
                         display: block;
                         width: fit-content;
                         text-align: center;
                         margin: 4vh auto 4vh auto;
-                        font-size: 1.65vw;
+                        font-size: 1.4vw;
                         box-sizing: border-box;
                         max-width: 100%;
+                        transition: box-shadow .3s ease-out;
+                        box-shadow: 0 4px 50px rgba(94, 180, 75, .48)
+                    }
+                    
+                    a.button-pWyRmY6545268-element:hover {
+                        color: #fff;
+                        box-shadow: 0 31px 27px 2px rgba(94, 180, 75, .48)
                     }
                     
                     @media (max-width: 1200px) {
@@ -534,14 +557,14 @@
                     }
                 </style>
                 <a href="https://pay.kiwify.com.br/dtaXUG1?src=ytad01" target="_blank" class="btn button-pWyRmY6545268-element zooming">
-                    SIM, EU QUERO AUMENTAR MINHA TEMPERATURA INTERNA!</a>
+                    QUERO AUMENTAR MINHA TEMPERATURA INTERNA!</a>
             </div>
             <div class="hyperlink-1657814165233XBbbd5 esconder">
                 <style>
                     .hyperlink-1657814165233XBbbd5-element {
                         font-size: 1.60vw;
                         font-weight: 500;
-                        color: #0d6efd !important;
+                        color: #ffffff !important;
                         text-align: center;
                         display: block;
                         margin: 2vh auto 2vh auto;
@@ -561,7 +584,7 @@
                     }
                 </style>
                 <a class="hyperlink-1657814165233XBbbd5-element" href="https://pay.kiwify.com.br/dtaXUG1?src=ytad01" target="_blank" rel="nofollow">
-                    <u>Quero começar agora!<u>
+                    <u>Começar agora!<u>
 </u></u>
                 </a><u><u>
 </u></u>
@@ -571,59 +594,64 @@
     </div>
     <div class="division-jhHYto4486005__wrapper">
         <style>
-        #division-jhHYto4486005 {
-        position: relative;
-        padding: 3vh 20vw 3vh 20vw;
-        background-color: #ffffff;
-        }
-        @media (max-width:1200px) {
-        #division-jhHYto4486005 {
-        padding: 2.25vh 15vw 25vh 15vw;
-        }
-        }
-        @media (max-width:600px) {
-        #division-jhHYto4486005 {
-        padding: 1.5vh 1.5vw 15vh 1.5vw;
-        }
-        }
+            #division-jhHYto4486005 {
+                position: relative;
+                padding: 3vh 20vw 3vh 20vw;
+                background-color: #121a21;
+            }
+            
+            @media (max-width:1200px) {
+                #division-jhHYto4486005 {
+                    padding: 2.25vh 15vw 25vh 15vw;
+                }
+            }
+            
+            @media (max-width:600px) {
+                #division-jhHYto4486005 {
+                    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+                }
+            }
         </style>
         <div id="division-jhHYto4486005" class="rmtkqC6489494">
-        <div class="image-YcufGh4495095">
-        <style>
-        .image-YcufGh4495095-element img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0.25vh;
-        margin-top: 0.25vh;
-        max-width: 100%;
-        border-radius: 0;
-        border: none;
-        }
-        @media (max-width: 1200px) {
-        .image-YcufGh4495095-element img {
-        max-width: 90%;
-        }
-        }
-        @media (max-width: 600px) {
-        .image-YcufGh4495095-element img {
-        max-width: 100%;
-        margin-left:auto;margin-right:auto;
-        }
-        }
-        </style>
-        <div class="image-YcufGh4495095-element">
-        <img loading="lazy" src="https://i.imgur.com/jKnAYeF.png" alt="">
+            <div class="image-YcufGh4495095">
+                <style>
+                    .image-YcufGh4495095-element img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 0.25vh;
+                        margin-top: 0.25vh;
+                        max-width: 100%;
+                        border-radius: 0;
+                        border: none;
+                    }
+                    
+                    @media (max-width: 1200px) {
+                        .image-YcufGh4495095-element img {
+                            max-width: 100%;
+                        }
+                    }
+                    
+                    @media (max-width: 600px) {
+                        .image-YcufGh4495095-element img {
+                            max-width: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                </style>
+                <div class="image-YcufGh4495095-element">
+                    <img loading="lazy" src="https://i.imgur.com/sNi0ndT.png" alt="">
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
+    </div>
     <div class="division-1657814825221__wrapper">
         <style>
             #division-1657814825221 {
                 position: relative;
                 padding: 4vh 20vw 4vh 20vw;
-                background-color: #F6F6F6;
+                background-color: #1b2630;
             }
             
             @media (max-width:1200px) {
@@ -639,32 +667,6 @@
             }
         </style>
         <div id="division-1657814825221" class="WapXIk8171583">
-            <div class="image-ILqHCF3874984">
-                <style>
-                    .image-ILqHCF3874984-element img {
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        padding-bottom: 0.25vh;
-                        padding-top: 0.25vh;
-                        max-width: 20%;
-                    }
-                    
-                    @media (max-width: 1200px) {
-                        .image-ILqHCF3874984-element img {
-                            max-width: 18%;
-                        }
-                    }
-                    
-                    @media (max-width: 600px) {
-                        .image-ILqHCF3874984-element img {
-                            max-width: 40%;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                    }
-                </style>
-            </div>
             <div class="footer-1657814831958Q4sQ3C">
                 <style>
                     .footer-1657814831958Q4sQ3C-element {
@@ -698,62 +700,77 @@
                     <br>
                     <p><strong>Copyright 2023 – MQG ®</strong></p>
                     <p style="margin-top:4px;">Todos os direitos reservados</p>
+                    <br/>
+                    <p>Este site não faz parte do site do Facebook ou Facebook Inc.<br/>Além disso, este site NÃO é endossado pelo Facebook de forma alguma.<br/>‍<br/>FACEBOOK é uma marca comercial da FACEBOOK, Inc.<br/><br/>Aviso Legal: “Nenhuma informação
+                        contida neste produto deve ser interpretada como uma afirmação da obtenção de resultados.<br/>‍<br/>Qualquer referência ao desempenho passado ou potencial de uma estratégia abordada no conteúdo não é, e não deve ser interpretada
+                        como uma recomendação ou como garantia de qualquer resultado específico.”<br/></p>
                     <div style="display:flex;align-items:center;justify-content:center;margin-top:24px;">
                         <a id="t" style="margin-right:12px" href="privacidade.html">Termos de Uso
                         </a><span style="margin-right:12px">·</span>
                         <a id="p" href="termos.html">Privacidade
                         </a>
+
                     </div>
                 </footer>
             </div>
         </div>
     </div>
-    <style>.esconder { display: none }</style>
+    <style>
+        .esconder {
+            display: none
+        }
+    </style>
 
-<script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function() {
-/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
-var SECONDS_TO_DISPLAY = 1300;
-var CLASS_TO_DISPLAY = ".esconder";
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            /* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+            var SECONDS_TO_DISPLAY = 1300;
+            var CLASS_TO_DISPLAY = ".esconder";
 
-/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
-var attempts = 0;
-var elsHiddenList = [];
-var elsDisplayed = false;
-var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
-var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
-var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+            /* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+            var attempts = 0;
+            var elsHiddenList = [];
+            var elsDisplayed = false;
+            var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+            var alreadyDisplayedKey = `alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+            var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
 
-setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+            setTimeout(function() {
+                elsHiddenList = Array.prototype.slice.call(elsHidden);
+            }, 0);
 
-var showHiddenElements = function () {
-elsDisplayed = true;
-elsHiddenList.forEach((e) => e.style.display = "block");
-localStorage.setItem(alreadyDisplayedKey, true)
-}
+            var showHiddenElements = function() {
+                elsDisplayed = true;
+                elsHiddenList.forEach((e) => e.style.display = "block");
+                localStorage.setItem(alreadyDisplayedKey, true)
+            }
 
-var startWatchVideoProgress = function () {
-if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
-if (attempts >= 10) return;
-attempts += 1;
-return setTimeout(function () { startWatchVideoProgress() }, 1000);
-}
+            var startWatchVideoProgress = function() {
+                if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+                    if (attempts >= 10) return;
+                    attempts += 1;
+                    return setTimeout(function() {
+                        startWatchVideoProgress()
+                    }, 1000);
+                }
 
-smartplayer.instances[0].on('timeupdate', () => {
-if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
-if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
-showHiddenElements();
-})
-}
+                smartplayer.instances[0].on('timeupdate', () => {
+                    if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+                    if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+                    showHiddenElements();
+                })
+            }
 
-if (alreadyElsDisplayed === 'true') {
-setTimeout(function () { showHiddenElements(); }, 100);
-} else {
-startWatchVideoProgress()
-}
-});
-</script>
-        <script>
+            if (alreadyElsDisplayed === 'true') {
+                setTimeout(function() {
+                    showHiddenElements();
+                }, 100);
+            } else {
+                startWatchVideoProgress()
+            }
+        });
+    </script>
+    <script>
         document.addEventListener("contextmenu", function(e) {
             e.preventDefault();
         }, false);
@@ -824,7 +841,83 @@ startWatchVideoProgress()
             }
         }
     </script>
-    
+    <script>
+        //DATA LIMITE
+        // Definir os nomes dos dias da semana em português
+        const diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+
+        // Definir os nomes dos meses do ano em português
+        const mesesDoAno = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+        // Criar uma nova data com a data limite da aula
+        const dataLimite = new Date();
+
+        // Obter o nome do dia da semana, nome do mês e ano da data limite
+        const diaDaSemana = diasDaSemana[dataLimite.getDay()];
+        const diaDoMes = dataLimite.getDate();
+        const mesDoAno = mesesDoAno[dataLimite.getMonth()];
+        const ano = dataLimite.getFullYear();
+
+        // Montar o texto final
+        const texto = `${diaDaSemana}, ${diaDoMes} de ${mesDoAno} de ${ano} é o último dia para ver essa aula`;
+
+        // Definir o tempo total em segundos (15 minutos)
+        const tempoTotal = 25 * 60;
+
+        // Definir as classes CSS para as duas divs que irão exibir o tempo
+        const classeMinutos = 'minutos';
+        const classeSegundos = 'segundos';
+
+        // Iniciar o contador
+        let tempoRestante = tempoTotal;
+        let intervalID = null;
+
+        // Atualizar as divs com o tempo restante
+        function atualizarContador() {
+            // Calcular o número de minutos e segundos restantes
+            const minutos = Math.floor(tempoRestante / 60);
+            const segundos = tempoRestante % 60;
+
+            // Selecionar as divs usando as classes CSS
+            const divMinutos = document.querySelector(`.${classeMinutos}`);
+            const divSegundos = document.querySelector(`.${classeSegundos}`);
+
+            // Atualizar o conteúdo das divs com o tempo restante
+            divMinutos.textContent = minutos < 10 ? '0' + minutos : minutos;
+            divSegundos.textContent = segundos < 10 ? '0' + segundos : segundos;
+
+            // Diminuir o tempo restante em 1 segundo
+            tempoRestante--;
+
+            //console.log(tempoRestante);
+
+            // Verificar se o tempo restante chegou a zero
+            if (tempoRestante <= 0) {
+                clearInterval(intervalID); // Parar o contador
+                divMinutos.textContent = '00'; // Exibir 00 nos minutos
+                divSegundos.textContent = '00'; // Exibir 00 nos segundos
+            }
+        }
+
+        const elementoDataLimite = document.querySelector('.date_limite');
+        // Atualizar o texto do elemento com o texto final
+        // e apresenta ele após ser gerado a data atual
+        elementoDataLimite.textContent = texto;
+        var elemento = document.querySelector('.alert_limit');
+        elemento.style.display = 'flex';
+
+        // Atualizar o contador a cada segundo
+        window.onload = function() {
+            intervalID = setInterval(atualizarContador, 1000);
+        };
+
+        function showContent() {
+            $('.dela').fadeIn(200).css('display', 'flex');
+            $('.navbar_alert').fadeOut(200);
+            $('.navebar_main').fadeIn(300);
+        }
+    </script>
+
 </body>
 
 </html>
